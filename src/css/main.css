@@ -8,16 +8,27 @@
 
 .card {
   margin: auto;
-  width: 50%; }
+  max-width: 430rem;
+  height: 30rem; }
 
-.card-img {
-  margin: auto; }
+.carousel {
+  padding-bottom: 50px; }
 
-.col-md-4 {
-  margin: auto; }
+.card-link {
+  padding-top: 4rem; }
+
+.card-img-top {
+  margin: auto;
+  padding: 1rem;
+  max-width: 350px; }
 
 .card-title {
-  padding-bottom: 2rem; }
+  padding-bottom: 1rem; }
+
+.carousel-indicators li {
+  color: black;
+  background-color: black !important;
+  margin-top: 2rem; }
 
 .fade-in {
   animation: fadeIn ease 2s; }
@@ -7861,5 +7872,17 @@ a.text-dark:hover, a.text-dark:focus {
     width: 6rem; } }
 .projects {
   width: 80%; }
+  .projects h1 {
+    padding-bottom: 3rem;
+    padding-top: 3rem; }
+
+.resume {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #007bff; }
+
+.resume-btn {
+  color: white !important;
+  border: solid white 1px; }
 
 /*# sourceMappingURL=main.css.map */
