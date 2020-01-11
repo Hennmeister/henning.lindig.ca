@@ -1,1 +1,125 @@
+$dark-blue: #2c3e50 !default;
+$secondary: $dark-blue !default;
+
+.navbar-brand {
+    width: 3rem;
+    display: inline-block;
+}
+
+.navbar-nav > li {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.card {
+    margin: auto;
+    width: 50%;
+}
+
+.card-img {
+    margin: auto;
+}
+
+.col-md-4 {
+    margin: auto;
+}
+
+.card-title {
+    padding-bottom: 2rem;
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
+
+   .carousel-indicators li {
+       color:black;
+   }
+
+   .carousel-indicators {
+       color: black;
+   }
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+.intro {
+   padding-top: calc(6rem + 74px);
+   padding-bottom: 1rem;
+   color: white;
+  .intro-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+  }
+    .intro-headshot {
+        width: 15rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .intro {
+      padding-top: calc(6rem + 104px);
+      padding-bottom: 6rem;
+      .intro-heading {
+        font-size: 4rem;
+        line-height: 3.5rem;
+      }
+      .intro-subheading {
+        font-size: 1.5rem;
+      }
+  
+    }
+}
+
+.socials .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-top: 5rem;
+
+
+  .socials .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+}
+
+.socials h1 {
+    padding-top: 5rem;
+}
+.socials h2 {
+    padding-top: 1rem;
+    font-weight: 400;
+  }
+.socials {
+    text-align: center;
+}
+
+@include media-breakpoint-down(md) {
+    .socials .col-lg-4 {
+        padding-top: 1rem;
+    }
+    .socials-img {
+        width: 6rem;
+    }
+}
+
+.projects {
+    width: 80%;
+}

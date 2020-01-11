@@ -8,18 +8,139 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="src/css/main.css">
 
-    <title>Hello, world!</title>
+    <title>Henning Lindig</title>
   </head>
   <body>
     <main role="main">
-        <div class="masthead text-center">
-            <h1 class="display-2">Hello, world!</h1>
-        </div>
+
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <img class="navbar-brand" href="#" src="src/assets/hen.png">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Socials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Sentiment Analysis</a>
+                    <a class="dropdown-item" href="#">FormulaStats</a>
+                    <a class="dropdown-item" href="#">GameOfLife</a>
+                  </div>
+                </li>
+              </ul>
+              </nav>
         <div>
+
+        <!--INTRO SECTION-->
+        <div class="intro bg-primary text-center">
+            <img class="intro-headshot rounded-circle" src="src/assets/good_photo.jpeg">
+            <h1 class="intro-heading fade-in">I'm Henning</h1>
+        </div>
+
+         <!--PROJECTS-->
+        <div class="container projects text-center">
+        <h1>Projects</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="src/assets/sentiment.png" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Reddit Sentiment Analyzer</h5>
+                          <p class="card-text">Sentiment analysis tool for reddit posts.</p>
+                          <a href="#" class="card-link">Check it out</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="src/assets/f1.jpg" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">FormulaStats</h5>
+                          <p class="card-text">A Django-powered website for displaying various Formula1 driver statistics and trends.</p>
+                          <a href="#" class="card-link">Check it out</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="src/assets/gameoflife.png" style="padding-left: 1p" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Game Of Life</h5>
+                          <p class="card-text">A biological take on Conway's Game of Life.</p>
+                          <a href="#" class="card-link">Check it out</a>                        </div>
+                      </div>
+                    </div>
+                  </div>              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+          <!--SOCIALS-->
+        <div class="container socials">
+            <h1 class="social-heading">Socials</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="https://www.linkedin.com/in/henning-l-a9893a129/"><img class="socials-img rounded-circle" src="src/assets/linkedin.png" focusable="false"></img></a>
+                    <h2>Linkedin</h2>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://github.com/Hennmeister"><img class="socials-img rounded-circle" src="src/assets/github.png"></a>
+                    <h2>Github</h2>
+                </div>
+                <div class="col-lg-4">
+                    <a><img class="socials-img rounded-circle" src="src/assets/mail.png"></img></a>
+                    <h2>Email</h2>
+                </div>
+            </div>
             <hr class="featurette-divider">
         </div>
-        <footer class="container">
-            <a href="#">top</a>
+
+
+        <footer class="container text-center">
+            <a class="text-muted" href="#"><p>top</p></a>
         </footer>
 
         <!-- Bootstrap Javascript-->
