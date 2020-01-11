@@ -26,20 +26,13 @@
                   <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Socials</a>
+                  <a class="nav-link" href="#socials">Socials</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
+                  <a class="nav-link" href="#resume">Resume</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projects
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Sentiment Analysis</a>
-                    <a class="dropdown-item" href="#">FormulaStats</a>
-                    <a class="dropdown-item" href="#">GameOfLife</a>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
                 </li>
               </ul>
               </nav>
@@ -49,10 +42,14 @@
         <div class="intro bg-primary text-center">
             <img class="intro-headshot rounded-circle" src="src/assets/good_photo.jpeg">
             <h1 class="intro-heading fade-in">I'm Henning</h1>
+            <h2 class="intro-subheading fade-in"><span>&#8226;</span>Computer Science Student at UofT</h2>
+            <h2 class="intro-subheading fade-in delay-2"><span>&#8226;</span>Into Fitness, WebDev, and Cool Projects</h2>
+            <h2 class="intro-subheading fade-in delay-3"><span>&#8226;</span>Looking for a Summer 2020 Internship</h2>
+
         </div>
 
          <!--PROJECTS-->
-        <div class="container projects text-center">
+        <div id="projects" class="container projects text-center">
         <h1>Here are some of my projects</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -65,9 +62,13 @@
                 <div class="card">
                     <img class="card-img-top" src="src/assets/sentiment.png" alt="Sentiment Analysis">
                     <div class="card-body">
-                      <h5 class="card-title">Reddit Sentiment Analyser</h5>
-                      <p class="card-text">Analysis sentiemnt on reddit.</p>
-                      <a href="#" class="card-link">Check it out</a>
+                      <h5 class="card-title">Reddit Sentiment Analyzer</h5>
+                      <p class="card-text">Hybrid approach to analyzing the sentiment of short social media posts.
+                        Combined various machine learning classifiers with VADER (lexicon-based package) to create sentiment analysis tool. 
+                      </p>
+                      <p class="card-text text-muted tools">Python, Scikit-learn, NLTK, VADER</p>
+                      <a href="https://github.com/Hennmeister/SentimentAnalysis" class="card-link">Check it out</a>
+
 
                     </div>
                   </div>
@@ -77,8 +78,9 @@
                     <img class="card-img-top" src="src/assets/f1.jpg" alt="FormulaStats">
                     <div class="card-body">
                       <h5 class="card-title">FormulaStats</h5>
-                      <p class="card-text">A Django-powered website for displaying formula driver statistics and trends.</p>
-                      <a href="#" class="card-link">Check it out</a>
+                      <p class="card-text">A Django-powered website for displaying Formula 1 driver statistics and trends.</p>
+                      <p class="card-text text-muted tools">Django, JS, HTML/CSS, REST APIs</p>
+                      <a href="https://github.com/Hennmeister/FormulaStats" class="card-link">Check it out</a>
 
                     </div>
                   </div>
@@ -88,8 +90,9 @@
                     <img class="card-img-top" src="src/assets/gameoflife.png" alt="GameOfLife">
                     <div class="card-body">
                       <h5 class="card-title">Game of Life</h5>
-                      <p class="card-text">A biological take on Conway's Game of Life.</p>
-                      <a href="#" class="card-link">Check it out</a>
+                      <p class="card-text">A biological take on Conway's Game of Life with strong OOP principles and software design patterns.</p>
+                      <p class="card-text text-muted tools">C#, Window Forms</p>
+                      <a href="https://github.com/Hennmeister/game-of-life" class="card-link">Check it out</a>
 
                     </div>
                   </div>
@@ -108,7 +111,7 @@
 
 
         <!--RESUME-->
-        <div class="container-fluid resume">
+        <div id="resume" class="container-fluid resume">
              <div class="row">
                 <div class="col-lg d-flex justify-content-center">
                     <h3>This is my
@@ -116,14 +119,14 @@
                     </h3>
                 </div>
                 <div class="col-lg d-flex justify-content-center">
-                    <a class="btn btn-secondary resume-btn" href"src/assets/Resume.pdf" target="_blank">Open Me</a>
+                    <a class="btn btn-secondary resume-btn" href="src/assets/Resume.pdf" target="_blank">Open Me</a>
                 </div>
             </div>
         </div>
         
           <!--SOCIALS-->
         <div class="container socials">
-            <h1 class="social-heading">Socials</h1>
+            <h1 id="socials" class="social-heading">Socials</h1>
             <div class="row">
                 <div class="col-lg-4">
                     <a href="https://www.linkedin.com/in/henning-l-a9893a129/"><img class="socials-img rounded-circle" src="src/assets/linkedin.png" focusable="false"></img></a>
@@ -134,7 +137,7 @@
                     <h2>Github</h2>
                 </div>
                 <div class="col-lg-4">
-                    <a><img class="socials-img rounded-circle" src="src/assets/mail.png"></img></a>
+                    <a href="mailto: henning.lindig@rogers.com"><img class="socials-img rounded-circle" src="src/assets/mail.png"></img></a>
                     <h2>Email</h2>
                 </div>
             </div>

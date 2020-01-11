@@ -13,26 +13,18 @@ $secondary: $dark-blue !default;
 
 .card {
     margin: auto;
-    max-width:430rem;
-    height: 30rem;
+    max-width: 430rem;
+    height: 26rem;
 }
 
 .carousel {
     padding-bottom: 50px;
 }
 
-.card-link {
-    padding-top: 4rem;
-}
-
 .card-img-top {
     margin: auto;
-    padding: 1rem;
-    max-width: 350px;
-}
-
-.card-title {
-    padding-bottom: 1rem;
+    padding: 0.25rem;
+    max-width: 200px;
 }
 
 .carousel-indicators li {
@@ -40,8 +32,10 @@ $secondary: $dark-blue !default;
     background-color: black !important;
     margin-top: 2rem;
 }
+
 .fade-in {
     animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn{
@@ -71,26 +65,44 @@ $secondary: $dark-blue !default;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .intro {
-   padding-top: calc(6rem + 74px);
-   padding-bottom: 1rem;
+   padding-top: 1rem;
+   padding-bottom: 3rem;
    color: white;
   .intro-heading {
-    font-size: 2.75rem;
+    text-decoration: underline;
+    text-decoration-color: $secondary;
+    font-size: 3rem !important;
     line-height: 2.75rem;
     padding-top: 3rem;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
   }
     .intro-headshot {
         width: 15rem;
     }
 }
 
+.intro-subheading {
+    color: $secondary;
+    font-size: 1rem !important;
+    padding: 0.5rem;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.delay-2 {
+    animation-delay: 2s;
+}
+
+.delay-3 {
+    animation-delay: 3s;
+}
+
 @include media-breakpoint-up(lg) {
     .intro {
-      padding-top: calc(6rem + 104px);
-      padding-bottom: 6rem;
+      padding-top: calc(3rem + 50px);
+      padding-bottom: 3rem;
       .intro-heading {
-        font-size: 4rem;
+        font-size: 5rem;
         line-height: 3.5rem;
       }
       .intro-subheading {
@@ -114,11 +126,15 @@ $secondary: $dark-blue !default;
 
 .socials h1 {
     padding-top: 5rem;
+    color: $secondary;
+    text-decoration: underline;
+    text-decoration-color: $primary;
 }
 .socials h2 {
     padding-top: 1rem;
     font-weight: 400;
-  }
+    color: $secondary;
+}
 .socials {
     text-align: center;
 }
@@ -134,6 +150,8 @@ $secondary: $dark-blue !default;
 
 .projects {
     width: 80%;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
     h1 {
         padding-bottom: 3rem;
         padding-top: 3rem;
@@ -141,12 +159,50 @@ $secondary: $dark-blue !default;
 }
 
 .resume {    
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
     background-color: rgba($color: $primary, $alpha: 1.0);
 }
-
 .resume-btn {
     color: white !important; 
     border: solid white 1px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    padding-bottom: 0.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $primary;
+}
+
+.tools {
+    font-size: x-small;
+}
+
+.card-text {
+    font-size: x-small;
+}
+
+@include media-breakpoint-up(md) {
+    .tools {
+        font-size: small;
+    }
+
+    .card-text {
+        font-size: large;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .card-img-top{
+        max-width: 450px;
+    }
+    .card {
+        height: 40rem;
+    }
+
+    .card-title {
+        font-size: xx-large;
+    }
 }
